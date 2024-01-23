@@ -2,14 +2,32 @@
 -- create tables
 --
 
-CREATE TABLE products (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  code VARCHAR(15),
-  name VARCHAR(255),
-  description TEXT,
-  price NUMERIC(10, 2),
-  stof VARCHAR(255)
+
+CREATE TABLE categories (
+  id INTEGER PRIMARY KEY autoincrement,
+  broek TEXT,
+  shirt TEXT,
+  trui TEXT,
+  sokken TEXT,
+  schoenen TEXT
 );
+CREATE TABLE kleur ( 
+  id INTEGER PRIMARY KEY autoincrement,
+  rood,
+  groen,
+  blauw,
+  geel,
+  zwart,
+  );
+CREATE table product(
+  id INTEGER PRIMARY KEY autoincrement,
+  name 
+  description 
+  price
+  code 
+);
+CREATE table merk 
+)
 
 
 
