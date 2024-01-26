@@ -13,20 +13,41 @@ CREATE TABLE categories (
 );
 CREATE TABLE kleur ( 
   id INTEGER PRIMARY KEY autoincrement,
+  naam
   rood,
   groen,
   blauw,
   geel,
   zwart,
   );
-CREATE table product(
+CREATE table product (
   id INTEGER PRIMARY KEY autoincrement,
-  name 
-  description 
-  price
-  code 
+  name,
+  description,
+  price,
+  code,
 );
-CREATE table merk 
+CREATE table merk (
+  id INTEGER PRIMARY KEY autoincrement,
+  naam VARCHAR(100),
+  description VARCHAR(100),
+  price NUMERIC(10,2),
+  code VARCHAR(100),
+  Tommy Hilfiger,
+  Nike,
+  Snipes,
+  The North Face,
+  Adidas,
+);
+CREATE table stof_kleding (
+  id INTEGER PRIMARY KEY autoincrement,
+  polyester,
+  katoen,
+  linnen,
+  leer,
+  wol,
+);
+)
 )
 
 
