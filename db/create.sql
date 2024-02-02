@@ -5,50 +5,40 @@
 
 CREATE TABLE categories (
   id INTEGER PRIMARY KEY autoincrement,
-  broek TEXT,
-  shirt TEXT,
-  trui TEXT,
-  sokken TEXT,
-  schoenen TEXT
+  soortkleding TEXT 
 );
+create table maat (
+  id INTEGER PRIMARY KEY autoincrement,
+  size TEXT, 
+  )
 CREATE TABLE kleur ( 
   id INTEGER PRIMARY KEY autoincrement,
-  naam
-  rood,
-  groen,
-  blauw,
-  geel,
-  zwart,
+  kleur TEXT 
+  naam TEXT 
   );
+CREATE table stof_kleding (
+  id INTEGER PRIMARY KEY autoincrement,
+  wasvoorschrift TEXT, 
+  stof TEXT,
+);
 CREATE table product (
   id INTEGER PRIMARY KEY autoincrement,
-  name,
-  description,
-  price,
-  code,
+  name TEXT,
+  description TEXT,
+  price numeric,
+  code numeric,
+  stofID int,
+  merkID int,
+  kleurID int, 
 );
 CREATE table merk (
   id INTEGER PRIMARY KEY autoincrement,
   naam VARCHAR(100),
-  description VARCHAR(100),
-  price NUMERIC(10,2),
-  code VARCHAR(100),
-  Tommy Hilfiger,
-  Nike,
-  Snipes,
-  The North Face,
-  Adidas,
-);
-CREATE table stof_kleding (
-  id INTEGER PRIMARY KEY autoincrement,
-  polyester,
-  katoen,
-  linnen,
-  leer,
-  wol,
+  );
+  
 );
 )
-)
+
 
 
 
