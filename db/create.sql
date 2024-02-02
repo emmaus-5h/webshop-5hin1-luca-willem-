@@ -2,42 +2,52 @@
 -- create tables
 --
 
-
-CREATE TABLE categories (
-  id INTEGER PRIMARY KEY autoincrement,
-  soortkleding TEXT 
-);
-create table maat (
-  id INTEGER PRIMARY KEY autoincrement,
-  size TEXT, 
-  )
-CREATE TABLE kleur ( 
-  id INTEGER PRIMARY KEY autoincrement,
-  kleur TEXT 
-  naam TEXT 
-  );
-CREATE table stof_kleding (
-  id INTEGER PRIMARY KEY autoincrement,
-  wasvoorschrift TEXT, 
-  stof TEXT,
-);
 CREATE table product (
   id INTEGER PRIMARY KEY autoincrement,
   name TEXT,
   description TEXT,
   price numeric,
   code numeric,
-  stofID int,
-  merkID int,
-  kleurID int, 
+  stof_ID int,
+  merk_ID int,
+  kleur_ID int 
 );
+
+CREATE TABLE categories (
+  id INTEGER PRIMARY KEY autoincrement,
+  soortkleding TEXT 
+);
+
+create table maat (
+  id INTEGER PRIMARY KEY autoincrement,
+  size TEXT 
+  );
+CREATE TABLE kleur ( 
+  id INTEGER PRIMARY KEY autoincrement,
+  kleur TEXT 
+  );
+
+CREATE TABLE product_kleur (
+  id INTEGER PRIMARY KEY autoincrement,
+  kleur_id INTEGER,
+  product_id INTEGER
+);
+
+CREATE table stof_kleding (
+  id INTEGER PRIMARY KEY autoincrement,
+  wasvoorschrift TEXT, 
+  stof TEXT
+);
+
+
+
 CREATE table merk (
   id INTEGER PRIMARY KEY autoincrement,
   naam VARCHAR(100),
   );
   
 );
-)
+
 
 
 
