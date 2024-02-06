@@ -8,9 +8,10 @@ CREATE table product (
   description TEXT,
   price numeric,
   code numeric,
-  stof_ID int,
-  merk_ID int,
-  kleur_ID int 
+  stof_ID integer,
+  merk_ID integer,
+  maat_ID integer,
+  categorie_ID integer
 );
 
 CREATE TABLE categories (
@@ -39,14 +40,12 @@ CREATE table stof_kleding (
   stof TEXT
 );
 
-
-
 CREATE table merk (
   id INTEGER PRIMARY KEY autoincrement,
-  naam VARCHAR(100),
+  naam TEXT
   );
   
-);
+
 
 
 
@@ -59,7 +58,11 @@ CREATE table merk (
 -- curl "https://api.mockaroo.com/api/910b6c20?count=100&key=90eac760" > seed.sql
 --
 -- want different data? check: https://www.mockaroo.com/910b6c20
---
+
+
+--/waardes in tabels gaan doen, producten zoeken en kiezen. en bijbehorende informatie/
+
+
 
 insert into products (name, description, code, price) values ('mooieschoen', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id.', '816905633-0', 10.5);
 insert into products (name, description, code, price) values ('lelekijkschoen', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '077030122-3', 11);

@@ -203,3 +203,23 @@ for help almost 24x7 with many questions and problems and providing basic shop c
 
 
 
+# PLAN VOOR API EN WEB
+zie video 5 en 6, informatica emmauscollege. 
+1. aanpassen api, zie video 5
+mapje api.index,js
+regel app.get (' /api/products' , getProducts)
+/api/products geeft de code aan waar de webpagina de vraag aan api stelt.
+- getproducts geeft de code die de vraag beantwoord.
+- in GetProducts staat de sql query voor de database.
+- 'Selectprodcucts.id' AS .......,.... ,..
+- pas de query aan, zodat er extra velden uit de database worden opgevraagd, gebruik alijd AS. je kunt join gebruiken, bij 1 op n moet je join gebruiken. 
+
+
+3. aanpassen web , zie video 6
+
+web -> index.html 
+-css en html 
+- template door script gekopieerd, elk product is kopie vn template, nieuw product moet in template gezet worden. onder de regel <!--template for product info--!> staat template.
+- als je iets toevoegt aan het template, dan moet je de waarde erin laten zetten. code toevoegen in for (let row in data) //herhaal voor elk prodcuct, ongeveer regel 110.
+- bij template verander je welke informatie, bijvoorbeeld, wordt, merk, naam, id getoond wordt
+- bij clone kan je aanpassen wat voor waarde erin gezet nike, adidas, willem , luca, alec enz.
