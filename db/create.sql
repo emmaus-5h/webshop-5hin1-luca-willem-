@@ -127,19 +127,19 @@ insert into kleur (kleur_naam) values ('lichtblauw');
   insert into kleur (kleur_naam) values ('blauw');--nog kijken
 
   
-insert into product_kleur (product_id, , kleur_id) values (1, 1 );--eerste cijfer is product tweede is kleur
-insert into product_kleur (product id, , kleur id) values (1, 3 );
-insert into product_kleur (product id, , kleur id) values (2, 1 );
-insert into product_kleur (product id, , kleur id) values (1, 2 );
-insert into product_kleur (product id, , kleur id) values (1, 2 );
-insert into product_kleur (product id, , kleur id) values (1, 2 );
-insert into product_kleur (product id, , kleur id) values (1, 2 );
-insert into product_kleur (product id, , kleur id) values (1, 2 );
-insert into product_kleur (product id, , kleur id) values (1, 2 );
-insert into product_kleur (product id, , kleur id) values (1, 2 );
-insert into product_kleur (product id, , kleur id) values (1, 2 );
-insert into product_kleur (product id, , kleur id) values (1, 2 );
-insert into product_kleur (product id, , kleur id) values (1, 2 );
+insert into product_kleur (product_id, kleur_id) values (1, 1 );--eerste cijfer is product tweede is kleur
+insert into product_kleur (product_id, kleur id) values (1, 1 );
+insert into product_kleur (product_id, kleur id) values (2, 1 );
+insert into product_kleur (product_id, kleur id) values (1, 2 );
+insert into product_kleur (product_id, kleur id) values (1, 2 );
+insert into product_kleur (product_id, kleur id) values (1, 2 );
+insert into product_kleur (product_id, kleur id) values (1, 2 );
+insert into product_kleur (product_id, kleur id) values (1, 2 );
+insert into product_kleur (product_id, kleur id) values (1, 2 );
+insert into product_kleur (product_id, kleur id) values (1, 2 );
+insert into product_kleur (product_id, , kleur id) values (1, 2 );
+insert into product_kleur (product_id, , kleur id) values (1, 2 );
+insert into product_kleur (product_id, , kleur id) values (1, 2 );
 insert into product_kleur (product id, , kleur id) values (1, 2 );
 insert into product_kleur (product id, , kleur id) values (1, 2 );
 insert into product_kleur (product id, , kleur id) values (1, 2 );
