@@ -11,7 +11,8 @@ CREATE table product (
   stof_ID integer,
   merk_ID integer,
   maat_ID integer,
-  categories_ID integer
+  categories_ID integer,
+  soort_ID integer
 );
 
 CREATE TABLE kleur ( 
@@ -37,7 +38,10 @@ CREATE table merk (
   naam TEXT
   );
   --1 op m
-
+CREATE TABLE soortproduct (
+  id INTEGER PRIMARY KEY autoincrement,
+  soort TEXT
+)
 
 
 -- deze doen we nog niet
@@ -76,7 +80,7 @@ CREATE table stof_kleding (
 
 insert into product (name, description, code, price, categories_id, merk_id) values ('trui', 'warme trui voor de koude winterdagen.', '816905633-0', 10.5,1 ,2);
 --1 is dan de categorie = katoen en 2 is merk = adidas
-insert into product (name, description, code, price) values ('schoenen', 'Nulla ut erat id mauris vulputate elementum. Nullam varius.', '077030122-3', 11);
+insert into product (name, description, code, price) values ('schoenen', '', '077030122-3', 11);
 insert into product (name, description, code, price) values ('tomaat, The', 'Pellentesque at nulla. Suspendisse potenti.', '445924201-X', 13.5);
 insert into product (name, description, code, price) values ('komkommer, el pecador de la pradera', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.', '693155505-7', 13.5);
 insert into product (name, description, code, price) values ('kip, A (Almost a Bride)', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14);
@@ -95,16 +99,12 @@ insert into categories (soortkleding) values ('linnen');
 insert into categories (soortkleding) values ('zijde');
 
 
---insert into  () values ();
---insert into  () values ();
---insert into  () values ();
---insert into  () values ();
---insert into  () values ();
---insert into  () values ();
-
-
-
-
+insert into soortproduct  (soort) values (Schoen);
+insert into soortproduct  (soort) values (T-Shirt);
+insert into soortproduct  (soort) values (Trui);
+insert into soortproduct  (soort) values (Broek);
+insert into soortproduct  (soort) values (Jas);
+insert into soortproduct  (soort) values (Tas);
 
 
 insert into stof_kleding (wasvoorschrift, stof) values ('warm wassen in wasmachine', 'katoen');
@@ -146,3 +146,4 @@ insert into product_kleur (product id, , kleur id) values (1, 2 );
 insert into product_kleur (product id, , kleur id) values (1, 2 );
 insert into product_kleur (product id, , kleur id) values (1, 2 );
 insert into product_kleur (product id, , kleur id) values (1, 2 );
+
