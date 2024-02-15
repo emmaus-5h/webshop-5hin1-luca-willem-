@@ -80,7 +80,7 @@ CREATE table stof_kleding (
 
 
 
-insert into products (name, description, code, price, categories_id, merk_id) values ('trui', 'warme trui voor de koude winterdagen.', '816905633-0', 180.00,3 ,3);
+insert into products (name, description, code, price, categories_id, merk_id) values ('trui', 'warme kersttrui voor de koude winterdagen.', '816905633-0', 180.00,3 ,3);
 --1 is dan de categorie = katoen en 2 is merk = adidas
 insert into products (name, description, code, price, categories_id, merk_id) values ('schoenen', 'fijne schoenen voor de lange wandeldagen.', '077030122-3', 220.00,1 ,1);
 insert into products (name, description, code, price, categories_id, merk_id) values ('broek','baggy broek voor het compleet maken van jouw winterfit.', '445924201-X', 60.00,5,4);
