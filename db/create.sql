@@ -82,23 +82,31 @@ CREATE table stof_kleding (
 
 insert into products (name, description, code, price, categories_id, merk_id) values ('trui', 'warme kersttrui voor de koude winterdagen.', '816905633-0', 180.00,3 ,3);
 --1 is dan de categorie = katoen en 2 is merk = adidas
+insert into products (name, description, code, price, categories_id, merk_id) values ('trui', 'Mooie trui, lekker warm en perfect voor de feestdagen.', '816905633-1', 120.99,3,4);
+insert into products (name, description, code, price, categories_id, merk_id) values ('schoenen', 'Mooie lichtblauwe schoenen, perfect voor onder uw pak, maar ook uw dagelijkse kledei.', '077030122-4', 435.00,6 ,5);
 insert into products (name, description, code, price, categories_id, merk_id) values ('schoenen', 'fijne schoenen voor de lange wandeldagen.', '077030122-3', 220.00,1 ,1);
 insert into products (name, description, code, price, categories_id, merk_id) values ('broek','baggy broek voor het compleet maken van jouw winterfit.', '445924201-X', 60.00,5,4);
+insert into products (name, description, code, price, categories_id, merk_id) values ('broek','Skibroek, met deze mooie broek sta jij shinend op de piste.', '445924201-X', 60.00,1, 2);
 insert into products (name, description, code, price, categories_id, merk_id) values ('jas', 'beste pufferjas voor als je het koud hebt in dit vreselijke land', '693155505-7', 150.00,2,5);
+insert into products (name, description, code, price, categories_id, merk_id) values ('jas', 'Mooie winterjas, lekker warm met een mooie bontkraag', '693155505-7', 150.00,2,4);
+insert into products (name, description, code, price, categories_id, merk_id) values ('Tas', 'Mooi informatica shirt! Misschien krijg je wel bonuspunten van je docent, '693155505-7', 90.00,4,5);
 insert into products (name, description, code, price, categories_id, merk_id) values ('Tas', 'beste tas voor het nieuwe schooljaar, hiermee ben jij degene die opvalt', '686928463-6', 90.00,4,2);
 insert into products (name, description, code, price, categories_id, merk_id) values ('T-Shirt', 'heerlijk shirtje om onder je nieuw gekochte trui te dragen', '492662523-7', 50.00,4,4);
 
-insert into merk (naam) values ('nike');
-insert into merk (naam) values ('adidas');
-insert into merk (naam) values ('stone island');
-insert into merk (naam) values ('zara');
-insert into merk (naam) values ('lyle en scott');
+
 
 insert into categories (soortkleding) values ('katoen');
 insert into categories (soortkleding) values ('wol');
 insert into categories (soortkleding) values ('polyester');
 insert into categories (soortkleding) values ('linnen');
 insert into categories (soortkleding) values ('zijde');
+insert into categories (soortkleding) values ('leren');
+
+insert into merk (naam) values ('nike');
+insert into merk (naam) values ('adidas');
+insert into merk (naam) values ('stone island');
+insert into merk (naam) values ('zara');
+insert into merk (naam) values ('lyle en scott');
 
 insert into stof_kleding (wasvoorschrift, stof) values ('warm wassen in wasmachine', 'katoen');
 insert into stof_kleding (wasvoorschrift, stof) values ('met de hand wassen in warm water', 'wol');
