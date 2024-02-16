@@ -80,17 +80,17 @@ CREATE table stof_kleding (
 
 
 
-insert into products (name, description, code, price, categories_id, merk_id) values ('Trui', 'warme kersttrui voor de koude winterdagen.', '816905633-0', 180.00,3 ,3);
+insert into products (name, description, code, price, categories_id, merk_id, maat_id) values ('Trui', 'warme kersttrui voor de koude winterdagen.', '816905633-0', 180.00,3 ,3,2);
 --1 is dan de categorie = katoen en 2 is merk = adidas
-insert into products (name, description, code, price, categories_id, merk_id) values ('Trui', 'Mooie trui, lekker warm en perfect voor de feestdagen.', '816905633-1', 120.99,3,4);
-insert into products (name, description, code, price, categories_id, merk_id) values ('Schoenen', 'Mooie lichtblauwe schoenen, perfect voor onder uw pak, maar ook uw dagelijkse kledei.', '077030122-4', 435.00,6 ,5);
-insert into products (name, description, code, price, categories_id, merk_id) values ('Schoenen', 'fijne schoenen voor de lange wandeldagen.', '077030122-3', 220.00,1 ,1);
-insert into products (name, description, code, price, categories_id, merk_id) values ('Broek','baggy broek voor het compleet maken van jouw winterfit.', '445924201-X', 60.00,5,4);
-insert into products (name, description, code, price, categories_id, merk_id) values ('Broek','Skibroek, met deze mooie broek sta jij shinend op de piste.', '445924201-y', 60.00,1, 2);
-insert into products (name, description, code, price, categories_id, merk_id) values ('Jas', 'beste pufferjas voor als je het koud hebt in dit vreselijke land', '693155505-9', 150.00,2,5);
-insert into products (name, description, code, price, categories_id, merk_id) values ('Jas', 'Mooie winterjas, lekker warm met een mooie bontkraag', '693155505-10', 150.00,2,4);
-insert into products (name, description, code, price, categories_id, merk_id) values ('T-Shirt', 'Mooi informatica shirt! Misschien krijg je wel bonuspunten van je docent', '693155505-7', 90.00,4,5);
-  insert into products (name, description, code, price, categories_id, merk_id) values ('T-Shirt', 'lekker shirtje om aan te doen om mensen in je omgeving te motiveren', '693155505-8', 90.00,5,1);
+insert into products (name, description, code, price, categories_id, merk_id, maat_id) values ('Trui', 'Mooie trui, lekker warm en perfect voor de feestdagen.', '816905633-1', 120.99,3,4,5);
+insert into products (name, description, code, price, categories_id, merk_id, maat_id) values ('Schoenen', 'Mooie lichtblauwe schoenen, perfect voor onder uw pak, maar ook uw dagelijkse kledei.', '077030122-4', 435.00,6 ,5, 10);
+insert into products (name, description, code, price, categories_id, merk_id, maat_id) values ('Schoenen', 'fijne schoenen voor de lange wandeldagen.', '077030122-3', 220.00,1 ,1, 8);
+insert into products (name, description, code, price, categories_id, merk_id, maat_id) values ('Broek','baggy broek voor het compleet maken van jouw winterfit.', '445924201-X', 60.00,5,4,2);
+insert into products (name, description, code, price, categories_id, merk_id, maat_id) values ('Broek','Skibroek, met deze mooie broek sta jij shinend op de piste.', '445924201-y', 60.00,1, 2,1);
+insert into products (name, description, code, price, categories_id, merk_id, maat_id) values ('Jas', 'beste pufferjas voor als je het koud hebt in dit vreselijke land', '693155505-9', 150.00,2,5,4);
+insert into products (name, description, code, price, categories_id, merk_id, maat_id) values ('Jas', 'Mooie winterjas, lekker warm met een mooie bontkraag', '693155505-10', 150.00,2,4,5);
+insert into products (name, description, code, price, categories_id, merk_id, maat_id) values ('T-Shirt', 'Mooi informatica shirt! Misschien krijg je wel bonuspunten van je docent', '693155505-7', 90.00,4,5,1);
+  insert into products (name, description, code, price, categories_id, merk_id, maat_id) values ('T-Shirt', 'lekker shirtje om aan te doen om mensen in je omgeving te motiveren', '693155505-8', 90.00,5,1,3);
   
 
 
@@ -108,11 +108,20 @@ insert into merk (naam) values ('stone island');
 insert into merk (naam) values ('zara');
 insert into merk (naam) values ('lyle en scott');
 
-insert into stof_kleding (wasvoorschrift, stof) values ('warm wassen in wasmachine', 'katoen');
-insert into stof_kleding (wasvoorschrift, stof) values ('met de hand wassen in warm water', 'wol');
-insert into stof_kleding (wasvoorschrift, stof) values ('koud wassen in wasmachine', 'polyester');
-insert into stof_kleding (wasvoorschrift, stof) values ('met de hand wassen in warm water', 'linnen');
-insert into stof_kleding (wasvoorschrift, stof) values ('koud wassen in wasmachine', 'zijde');
+insert into maat (size) values ('XS');
+insert into maat (size) values ('S');
+insert into maat (size) values ('M');
+insert into maat (size) values ('L');
+insert into maat (size) values ('XL');
+insert into maat (size) values ('36');
+insert into maat (size) values ('37');
+insert into maat (size) values ('38');
+insert into maat (size) values ('39');
+insert into maat (size) values ('40');
+insert into maat (size) values ('41');
+insert into maat (size) values ('42');
+insert into maat (size) values ('43');
+
 
 insert into kleur (kleur_naam) values ('blauw');
 insert into kleur (kleur_naam) values ('lichtblauw');
