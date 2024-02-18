@@ -10,6 +10,7 @@
 // Array van hoeveelheid (amount) per product, 
 //   de index van de array is het product_id
 
+
 function getProductInfo(id) {
   return JSON.parse(localStorage.getItem(`item_${id}`))
 }
@@ -123,6 +124,9 @@ document.querySelectorAll('.num_products').forEach( el => {
 
 
 }
+
+
+
 
 (function() {
   // your page initialization code here
